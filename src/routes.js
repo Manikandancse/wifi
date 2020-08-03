@@ -65,6 +65,10 @@ const Gst = React.lazy(() => import('./components/gst/index'));
 const AddGst = React.lazy(() => import('./components/gst/add'));
 const EditGst = React.lazy(() => import('./components/gst/edit'));
 
+const Installation = React.lazy(() => import('./components/installation/index'));
+const AddInstallation = React.lazy(() => import('./components/installation/add'));
+const EditInstallation = React.lazy(() => import('./components/installation/edit'));
+
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -126,6 +130,9 @@ const routes = [
   { path: '/gst', exact: true,  name: 'Bills', component: Gst },
   { path: '/gst/add',   name: 'Bill Add', component: AddGst },
   { path: '/gst/edit/:id', name: 'Bill Edit', component: EditGst },
+  { path: '/installation', exact: true,  name: 'Bills', component: Installation },
+  { path: '/installation/add',   name: 'Bill Add', component: AddInstallation },
+  { path: '/installation/edit/:id', name: 'Bill Edit', component: EditInstallation },
 ];
 
 export default routes;
